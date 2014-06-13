@@ -1,0 +1,38 @@
+.header, .footer, .jumbotron {background-color: rgba(0,0,0,0.5); }
+.header h3, .jumbotron h2, .footer, .jumbotron, h3, label, h4 { color:#e6e6e6;}
+.bkgd-img {
+	background-image: url(../images/Restaurant.jpg);
+	background-size: 100%;
+}
+input {
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.75);
+	color: #000;
+	text-align: center;
+	font-weight: 900;
+}
+
+/* POSITIONINGS */
+
+body,html { position:relative; height:100% }
+label { display:block; }
+.pad-it { padding-top:5px; }
+.header h3 { padding-bottom: 0px; }
+.footer { padding-top: 10px; }
+.space { padding:5px; }
+
+/* ANIMATIONS */
+.animate-view-container { position:relative; min-height: 100%; margin-top: 17.5%; }
+.animate-view.ng-enter,
+.animate-view.ng-leave {
+	transition:1s linear all;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.animate-view.ng-enter        { opacity:0; z-index: 100; }
+.animate-view.ng-enter-active { opacity:1; }
+.animate-view.ng-leave        { opacity:1; z-index: 99; }
+.animate-view.ng-leave-active { opacity:0; }
